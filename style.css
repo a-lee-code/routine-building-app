@@ -1,0 +1,214 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 5vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    /* Customize this to your chosen font */
+    background-color: rgb(175, 154, 192);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: rgb(164, 232, 198);
+    margin-top: 5vh;
+    margin-right: 10vw;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    padding: 5%;
+    border-radius: 10%;
+
+}
+
+h1,
+h2 {
+    color: purple;
+
+}
+
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+input[type="text"] {
+    background-color: rgb(164, 232, 198);
+    width: 40%;
+    font-size: large;
+}
+
+input[type="text"]:focus {
+    background-color: rgb(175, 154, 192);
+}
+
+input[type="text"]:hover {
+    border: 2px solid purple;
+}
+
+/* Hide default checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    /* Removes default styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: rgb(175, 154, 192);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Custom check effect */
+input[type="checkbox"]:checked {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+    font-weight: bold;
+}
+
+
+section {
+    margin: 5%;
+    padding: 2%;
+    border: 2px dashed rgb(175, 154, 192);
+}
+
+footer {
+    background-color: #4CAF50;
+    /* Change this to match your theme */
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+
+#streak, #task-progress {
+    margin: 20px 0;
+}
+
+#streak-count {
+    font-size: 2em;
+    color: green;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color:  rgb(175, 154, 192);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+button:hover {
+    background-color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra Small Screens (Phones) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Medium Screens (Tablets & Small Laptops) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Large Screens (Laptops & Desktops) */
+@media (min-width: 1201px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+* Extra Small Screens (Phones) */ @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5%;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    input[type="text"] {
+        width: 80%;
+        /* Make input fields easier to type in on mobile */
+        font-size: medium;
+    }
+
+    .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
